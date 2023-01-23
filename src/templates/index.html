@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+    <h1>Validation form</h1>
+    <form action="{{ url_for('greeting') }}" method="post">
+        <label>
+            <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
